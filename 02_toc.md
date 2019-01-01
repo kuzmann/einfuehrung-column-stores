@@ -17,7 +17,7 @@
 - [6. Anwendunsgebiete](08_use_cases.md)
 - ....
 
-- [Literaturverzeichnis](XX_references.md) 
+- [Literaturverzeichnis](references.md) 
 
 ***
 
