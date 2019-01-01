@@ -14,7 +14,7 @@ In der Literatur findet man verschiedene Bezeichnungen für spaltenorientierten 
 
 ***
 
-[<< Hintergrund und Überblick](04_history.md) | [Funktionsweise - Datenmodell >>](06-2_data-model.md)
+[<< Hintergrund und Überblick](04_history.md) | [Funktionsweise - Datenmodell >>](06-1_data_model.md)
 
 ***
 
