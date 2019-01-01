@@ -19,6 +19,6 @@ Text wird hier einfach so geschreiben.
 
 ***
 
-[Spaltenorientierte Speicherung >>](06-3_storage.md) | [Performance >>](06-5-performance.md)
+[<< Spaltenorientierte Speicherung ](06-3_storage.md) | [Performance >>](06-5_performance.md)
 
 ***

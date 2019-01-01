@@ -9,7 +9,7 @@
 In diesem Kapitel wird die Funktionsweise von spaltenorientierten Datenbanken erklärt. Dabei wird auf das Datenmodell, die technische Aspekte, die Methoden der Kompression und der Performance eingegangen.
 
 
-##4.1 Datenmodell
+# 4.1 Datenmodell
 
 Das Datenmodell basiert auf dem Schema des Keyspace. Ein Keyspace beinhaltet alle Column Families, wie in der Abbildung 1. zu sehen ist. Die Menge an Keyspaces bildet das spaltenorientierte Datenbanksystem. Ein Keyspace lässt sich mit einer Tabelle in einer relationalen Datenbank vergleichen.
 

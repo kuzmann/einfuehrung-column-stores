@@ -12,7 +12,7 @@ Die Abbildung 3. soll die beiden unterschiedlichen Methoden der Speicherung verd
 
 [Linktext](Link z.B. 01_toc.md).
 
-Verlinkung zum Bild <img src="files/speicherung.png" alt="Zeilen und spaltenorientierte Speicherung" style="width:570px;height:180px;">
+<img src="files/speicherung.png" alt="Zeilen und spaltenorientierte Speicherung" style="width:570px;height:180px;">
 Abbildung 3: Zeilen und spaltenorientierte Speicherung[He12]
 
 
@@ -20,7 +20,7 @@ Abbildung 3: Zeilen und spaltenorientierte Speicherung[He12]
 
 ***
 
-[<< Technische Aspekte](06-2_technical_aspects.md) | [Gefahren der Blockchain >>](06-4_compression.md)
+[<< Technische Aspekte](06-2_technical_aspects.md) | [Kompressionstechniken >>](06-4_compression.md)
 
 ***
 
