@@ -16,7 +16,7 @@ Das Datenmodell basiert auf dem Schema des Keyspace. Ein Keyspace beinhaltet all
 Eine Column Family besteht wiederum aus mehreren Zeilen. Je nach System wird dieses Konstrukt aus mehreren Zeilen anders benannt. Bei Googles Bigtable werden diese als Tablets bezeichnet. 
 
 
-<img src="files/Keyspace_columnFamily_klein.png" alt="Keyspace und Column Family" style="width:570px;height:180px;">
+![Keyspace und Column Family](files/Keyspace_columnFamily_klein.png)   
 Abbildung 1: Keyspace und Column Family  </br>
 
 
@@ -24,10 +24,7 @@ Abbildung 1: Keyspace und Column Family  </br>
 
 Eine Zeile in einer Column Familie hat eine große Menge Spalten haben. Die Anzahl der Spalten kann bei sehr großen Systemen bis zu einer Million oder darüber gehen. [BVA18] Diese Spalten müssen nicht alle gleich zu anderen Zeilen sein oder die gleiche Anzahl haben. Jede Spalte enthält einen Namen, einen Wert (Value) und einem Zeitstempel. Eine Zeile wird mit einem Key identifiziert und anhand des Keys mithilfe eines Sortierers sortiert. Die Zeilen werden in einer lexikalischen Reihenfolge der Zeilenschlüssel sortiert. Dies ermöglicht eine effizientere Suche nach einer bestimmten Information. Die Abbildung 2. visualisiert den Aufbau einer Zeile in einem Keyspace. [DB18] [CDG06]
 
-<img src="files/Zeile_row.png" alt="Aufbau einer Zeile" style="width:570px;height:180px;">
-Abbildung 2: Aufbau einer Zeile   </br>
-
-![Aufbau einer Zeile](files/Zeile_row.png)
+![Aufbau einer Zeile](files/Zeile_row.png)  
 Abbildung 2: Aufbau einer Zeile   </br>
 
 
