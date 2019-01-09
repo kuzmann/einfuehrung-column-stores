@@ -11,7 +11,7 @@ Die meisten relationalen Datenbanken speichern die Daten zeilenorientiert. Diese
 Die Abbildung 3. soll die beiden unterschiedlichen Methoden der Speicherung verdeutlichen. Bei der zielorientierten Speicherung muss man jede Zeile ganz durchgehen, um zum nächsten Datensatz (Zeile) zu gelangen. Bei der spaltenorientierten Datenbank werden die Daten spaltenweise zusammengefasst. Dadurch befinden sich sehr ähnliche Werte nah beieinander. Dementsprechend lassen Abfragen schneller und mit weniger Attributen ausführen. Diese physikalische Nähe der Werte bietet auch eine gute Grundlage für unterschiedliche Kompressionstechniken. 
 
 <img src="files/speicherung.png" alt="Zeilen und spaltenorientierte Speicherung" style="width:570px;height:180px;">
-Abbildung 3: Zeilen und spaltenorientierte Speicherung[He12]
+Abbildung 3: Zeilen und spaltenorientierte Speicherung[He12](references.md)
 
 
 ***
