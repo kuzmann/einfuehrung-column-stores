@@ -34,6 +34,19 @@ Bei Sequenzen von steigender oder fallenden ganzahligen Werte kann die Differenz
 Abbildung 6: Beispiel einer Differenzspeicherung
 
 
+Jeder dieser Verfahren hat ihre speziellen Einsatzgebiete und Vorteile. Bei allen dieser Techniken gibt es jeweils einen Kompressionsfaktor (KF), die als Quotient aus unkomprimierten und komprimierten Speicherung ausgegeben wird. Der Kehrwert des Kompressionsfaktoren von 1 subtrahiert, ergibt den eingesparten Speicherplatz in Prozent. Die Tabelle 1. zeigt den Komressionfaktor und die Speicherplatzersparnis aus den oben gezeigten Beispiele der drei Kompressionstechniken. [He12](references.md)
+
+
+|                            | Wörterbuchkompression           | Lauflängencodierung | Differenzspeicherung     |
+|----------------------------|---------------------------------|---------------------|--------------------------|
+| Unkomprimierte Speicherung | 17 Einträge, 230 Zeichen á Byte | 77 Zeichen          | 5 Integer-Werte á 5 Byte |
+| Komprimierte Speicherung   | Pro Eintrag 3 Bit               | 28 Zeichen          | 14 Byte-Werte            |
+| Kompressionsfaktor         | KF = 23,3                       | KF = 2,75           | KF = 1,78                |
+| Speicherplattersparnis     | 98 %                            | 64 %                | 44%                      |
+
+Tabelle 1: Kompressionsfaktor und Speicherplatzersparnis (mit den Beispielen)
+
+
 ***
 
 [<< Spaltenorientierte Speicherung ](06-3_storage.md) | [Performance >>](06-5_performance.md)
