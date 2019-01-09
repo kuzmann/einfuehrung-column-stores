@@ -27,6 +27,9 @@ Eine Zeile in einer Column Familie hat eine große Menge Spalten haben. Die Anza
 <img src="files/Zeile_row.png" alt="Aufbau einer Zeile" style="width:570px;height:180px;">
 Abbildung 2: Aufbau einer Zeile   </br>
 
+![Aufbau einer Zeile](files/Zeile_row.png)
+Abbildung 2: Aufbau einer Zeile   </br>
+
 
 
 Da Bigtable speziell für Google optimiert worden ist, kann man von Colum Families als Webtablets sprechen, die eine große Menge von Webseiten zusammenfassen. In diesen Webtables würde dann der Row Key (Zeilenschlüssel) die URL sein und die unterschiedlichen Eigenschaften und Aspekte werden in Spalten aufgeteilt. Der Inhalt der Webseiten sind dann die Values, auch Contents genannt. Der Zeitstempel zeigt den Zeitpunkt des Aufrufs an. Anders als zu anderen Datenbankensystem wie Cassandra kann jede Spalte mehrere Versionen einer Information enthalten, die durch den Zeitstempel identifiziert werden kann. [CDG06]
