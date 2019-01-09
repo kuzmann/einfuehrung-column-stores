@@ -26,14 +26,11 @@ Möchte man zum Beispiel den Gesamtumsatz von Kunden aus, die jeweils ein Produk
 
 
 ![Beispiel einer Datenbankabfrage](files/Invisible-Join.png) 
-
-<img src="files/Invisible-Join.png" alt="Beispiel einer Datenbankabfrage">   
 Abbildung 7: Beispiel einer Datenbankabfrage [DSN08]   
 
 
 Invisible Join kann zu dieser traditionellen Abfragetechnik eine Alternative darstellen. Das Verfahren arbeitet in drei Phasen. Als Erstes wird mit den jeweiligen Filterattributen Hash-Tabellen aus jeder Dimensionstabelle erstellt, um eine Liste von Schlüsseln (Keys) zu extrahieren. Die nächste Abbildung 8. zeigt mit einigen Beispieldaten die erste Phase. [MG15][DSN08]
 
-<img src="files/Invisible-Join-2.png" alt="Beispiel der ersten Phase von Invisible Join" style="width:253px;height:80px;">   
 ![Beispiel der ersten Phase von Invisible Join](files/Invisible-Join-1.png)    
 Abbildung 8: Beispiel der ersten Phase von Invisible Join [DSN08]    
 
@@ -41,17 +38,12 @@ Abbildung 8: Beispiel der ersten Phase von Invisible Join [DSN08]
 In der zweiten Phase wird die Hash-Tabelle verwendet, um die Positionen von Datensätzen bzw. Attributen in einer sogenannten Faktentabelle (Fact Table) zu ermitteln. In der Faktentabelle wird eine Fremdschlüsselspalte (foreign key) angelegt, die eine Liste aller Positionen anzeigt, die den gesuchten Attributen entsprechen. 
 Daraufhin erfolgt eine Überprüfung der Fremdschlüssel gehen die Hash-Tabellen und eine “satisfying bitmap” wird für die Faktentabelle erstellt. Nachdem dieser Prozess für alle Dimensionstabellen durchgeführt worden ist, werden die einzelnen Bitmaps mit einer AND-Verknüpfung zu einer eindeutigen Liste von Faktentabellenschlüssel  zusammengeführt. [DSN08]
 
-<img src="files/Invisible-Join-2.png" alt="Beispiel der zweiten Phase von Invisible Join" style="width:470px;height:180px;">  
-Abbildung 9: Beispiel der zweiten Phase von Invisible Join [DSN08]    
-
-
 ![Beispiel der zweiten Phase von Invisible Join](files/Invisible-Join-2.png)    
 Abbildung 9: Beispiel der zweiten Phase von Invisible Join [DSN08]   
 
 
 In der letzten Phase werden die Fremdschlüssel und die Hash-Tabellen verwendet, um die gesuchten Spaltenwerte zu extrahieren. Durch die Selektivität der gesamten Query, wird die Anzahl der extrahierten Werte minimiert. Das Nachschlagen der Hash-Tabellen ist extrem schnell, da die Schlüssel der Dimensionstabelle ab1 sortiert und somit eine  zusammenhängende Liste von Identifikatoren ergibt.[DSN08]
-
-<img src="files/Invisible-Join-2.png" alt="Beispiel der dritten Phase von Invisible Join" style="width:470px;height:180px;">   
+ 
 
 ![Beispiel der dritte Phase von Invisible Join](files/Invisible-Join-3.png)      
 Abbildung 10: Beispiel der dritte Phase von Invisible Join [DSN08]
