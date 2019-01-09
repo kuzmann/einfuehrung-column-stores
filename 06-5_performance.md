@@ -27,7 +27,7 @@ Möchte man zum Beispiel den Gesamtumsatz von Kunden aus, die jeweils ein Produk
 
 ![Beispiel einer Datenbankabfrage](files/Invisible-Join.png) 
 
-<img src="files/Invisible-Join.png" alt="Beispiel einer Datenbankabfrage" style="width:253px;height:80px;">   
+<img src="files/Invisible-Join.png" alt="Beispiel einer Datenbankabfrage">   
 Abbildung 7: Beispiel einer Datenbankabfrage [DSN08]   
 
 
