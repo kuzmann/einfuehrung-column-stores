@@ -7,13 +7,15 @@ Diese Semesterarbeit soll eine Einführung in die Funktionsweise, das Datenmodel
 Modul: Datenbanktechnologien,    
 Wintersemester Januar 2018/2019
 
+Herr Nicolai Alex
+
 
 ## Autoren
 
 | Name             | Matrikelnummer| Hochschule       | 
 |:-----------------|:--------------|:-----------------|
 | Anna Kuzmann	   | 824196      | Beuth-Hochschule         | 
-| Sabine Eichstädt    | XXXX        | Beuth-Hochschule | 
+| Sabine Selzer    | XXXX        | Beuth-Hochschule | 
 
 ***
 
