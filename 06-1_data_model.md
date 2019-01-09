@@ -17,16 +17,13 @@ Eine Column Family besteht wiederum aus mehreren Zeilen. Je nach System wird die
 
 
 <img src="files/Keyspace_columnFamily_klein.png" alt="Keyspace und Column Family" style="width:570px;height:180px;">
-Abbildung 1: Keyspace und Column Family
-
+Abbildung 1: Keyspace und Column Family    
 
 
 Eine Zeile in einer Column Familie hat eine große Menge Spalten haben. Die Anzahl der Spalten kann bei sehr großen Systemen bis zu einer Million oder darüber gehen.[BVA18]  Diese Spalten müssen nicht alle gleich zu anderen Zeilen sein oder die gleiche Anzahl haben. Jede Spalte enthält einen Namen, einen Wert (Value) und einem Zeitstempel. Eine Zeile wird mit einem Key identifiziert und anhand des Keys mithilfe eines Sortierers sortiert. Die Zeilen werden in einer lexikalischen Reihenfolge der Zeilenschlüssel sortiert. Dies ermöglicht eine effizientere Suche nach einer bestimmten Information. Die Abbildung 2. visualisiert den Aufbau einer Zeile in einem Keyspace.[DB18](references.md) [CDG06](references.md)
 
 <img src="files/Zeile_row.png" alt="Aufbau einer Zeile" style="width:570px;height:180px;">
-Abbildung 2: Aufbau einer Zeile
-
-
+Abbildung 2: Aufbau einer Zeile   
 
 Da Bigtable speziell für Google optimiert worden ist, kann man von Colum Families als Webtablets sprechen, die eine große Menge von Webseiten zusammenfassen. In diesen Webtables würde dann der Row Key (Zeilenschlüssel) die URL sein und die unterschiedlichen Eigenschaften und Aspekte werden in Spalten aufgeteilt. Der Inhalt der Webseiten sind dann die Values, auch Contents genannt. Der Zeitstempel zeigt den Zeitpunkt des Aufrufs an. Anders als zu anderen Datenbankensystem wie Cassandra kann jede Spalte mehrere Versionen einer Information enthalten, die durch den Zeitstempel identifiziert werden kann.[CDG06](references.md)
 
