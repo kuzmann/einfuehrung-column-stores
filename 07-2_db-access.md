@@ -30,6 +30,6 @@ Beim Auslesen vieler Datensätze(Aggregation), wobei nur wenig Spalten relevant 
 
 ***
 
-[<< Row Store vs Column Stre >>](07-1_row-column-store.md) | [Datenstruktur >>](07-3_normalized_data_structure.md)
+[<< Row Store vs Column Store >>](07-1_row-colum-store.md) | [Datenstruktur >>](07-3_normalized_data_structure.md)
 
 ***
