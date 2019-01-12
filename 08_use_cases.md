@@ -44,16 +44,8 @@ Es gibt eine vorgelagerte schreiboptimierte Datenbank in der Änderungen gespeic
 
 
 
-
-
-
-Text wird hier einfach so geschreiben.
-[Linktext](Link z.B. 01_toc.md).
-
-
-
 ***
 
-[<< Datenstruktur >>](07-3_normalized_data_structure.md) | [Nutzen für Datawarehaus und BI >>](09_data_warehouse_BI.md)
+[<< Datenstruktur >>](07-3_normalized_data_structure.md) | [Nutzen für Datawarehouse und BI >>](09_data_warehouse.md)
 
 ***

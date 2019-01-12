@@ -30,13 +30,8 @@ In [BDI-BI 18] wird eine weitere Definition aus IT-basierten und unternehmensspe
 
 
 
-
-
-
-
-
 ***
 
-[<< Anwendungsbeispiele >>](08_use_cases.md) | [Nutzen für Datawarehaus und BI >>](09_data_warehouse_BI.md)
+[<< Anwendungsbeispiele >>](08_use_cases.md) | [Nutzen für Datawarehaus und BI >>](09_data_warehouse.md)
 
 ***
