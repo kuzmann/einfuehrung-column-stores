@@ -52,7 +52,7 @@ Abbildung 10: Beispiel der dritte Phase von Invisible Join [DSN08]
 
 ***
 
-[<< Kompressionstechniken](06-4_compression.md) | [das nächste tehmen im Literaturverzeichnus >>](XXXXX.md)
+[<< Kompressionstechniken](06-4_compression.md) | [Row Store vs Column Store >>](07-1_row-colum-store.md)
 
 ***
 
