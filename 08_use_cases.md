@@ -4,7 +4,7 @@
 
 ***
 
-#6. Anwendungsbeispiele
+# 6. Anwendungsbeispiele
 Cassandra und HBase sind die zwei großen spaltenorientierte Datenbanken die ihr Spalten alle seperat speichern. Es gibt eine Vielzahl von Open Source Datenbanken, auf die dies nicht zutrifft und deren Performance im BEreich der analytischen Datenarbeit schneller ist.
 Wenn man Abfargen machen möchte,bei denen man ciht alle Felder eines Datensatzes abfragen möchte, sondern nur ein paar wenige bestimmte ist ee snciht sinnvoll siche alle betr4effenen ZEilen komplett zuholen. Hier benötigt man nur die Spalten, die die relevanten Informationen bereit halten und keine Aggregat-Tabellen zu andern Tabellen, also über mehrere Tabellen hinweg um zwei Inforamtionen von jedem Datensatz zurückzu geben, dartum können spaltenorientierte Datenbanken schneller performen.
 
