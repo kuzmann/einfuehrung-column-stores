@@ -15,7 +15,7 @@ Herr Nicolai Alex
 | Name             | Matrikelnummer| Hochschule       | 
 |:-----------------|:--------------|:-----------------|
 | Anna Kuzmann	   | 824196      | Beuth-Hochschule         | 
-| Sabine Selzer    | XXXX        | Beuth-Hochschule | 
+| Sabine Selzer    | 850762      | Beuth-Hochschule |
 
 ***
 
