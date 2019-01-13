@@ -22,7 +22,7 @@
     - HBase
     - Weitere Beispiele
 - [7. Nutzen im Data Warehousing](09_data_warehouse.md)
-- [8. Fazir](10_fazit.md)
+- [8. Fazit](10_fazit.md)
 
 
 - [Literaturverzeichnis](references.md) 
