@@ -5,7 +5,7 @@
 - [1. Einleitung](03_introduction.md)
 - [2. Hintergrund und Überblick](04_history.md)
 - [3. Grundlagen und Begriffe](05_basics.md)
-- 4. Funktionsweise
+- [4. Funktionsweise](06-1_data_model.md)
     - [4.1. Datenmodell](06-1_data_model.md)
     - [4.2. Technische Aspekte](06-2_technical_aspects.md)
     - [4.3. Spaltenorientierte Speicherung](06-3_storage.md)
@@ -21,7 +21,7 @@
     - Cassandra
     - HBase
     - Weitere Beispiele
-- [7. Nutzen im Data Warehousing](09_data_warehouse.md)
+- [7. Date Warehouse und Business Intelligence](09_data_warehouse.md)
 - [8. Fazit](10_fazit.md)
 
 
