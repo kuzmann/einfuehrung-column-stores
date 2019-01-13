@@ -13,9 +13,17 @@
     - [4.5. Perfomance](06-5_performance.md)
 
 
-- [5. Row Store vs Column Store](07_row-solum-store.md)
-- [6. Anwendunsgebiete](08_use_cases.md)
-- ....
+- [5. Row Store vs Column Store](07-1_row-colum-store.md)
+    - [5.1. Schreibende Datenbankzugriffe](07-2_db-access.md)
+    - [5.2. Lesender Zugriff](07-2_db-access.md)
+    - [5.3. Normalisierte Datenstruktur](07-3_normalized_data_structure.md)
+- [6. Anwendungsbeispiele](08_use_cases.md)
+    - Cassandra
+    - HBase
+    - Weitere Beispiele
+- [7. Nutzen im Data Warehousing](09_data_warehouse.md)
+- [8. Fazir](10_fazit.md)
+
 
 - [Literaturverzeichnis](references.md) 
 
