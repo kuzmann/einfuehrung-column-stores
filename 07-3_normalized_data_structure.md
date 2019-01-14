@@ -12,15 +12,15 @@ Spaltenorientierte Datenbanken bevorzugen eine denormalisierte Datenstruktur. We
 
 
 
-![Kundendaten](files/KundendatenRow.png)   
+![Kundendaten](files/KundendatenRow.PNG)   
 Abbildung 11: Beispiel Kundentabelle für Anwendungsfall "Zeitschriften Abo"  </br>
 
 
-![Abonnementarten](files/AbonnementArten-Row.png)   
+![Abonnementarten](files/AbonnementArten-Row.PNG)   
 Abbildung 12: Beispiel Abonementtabelle für Anwendungsfall "Zeitschriften Abo"  </br>
 
 
-![Aggregation](files/AggregationRow.png)   
+![Aggregation](files/AggregationRow.PNG)   
 Abbildung 13: Beispiel Aggregationstabelle Kunde zu Abonnement  </br>
 
 
@@ -29,7 +29,7 @@ Für diesen Anwendungsfall ist ein zeilenorietniertes Datenbanksystem gut geeign
 
 In einer spaltenorientierten Datenbank könnten die Daten wie ind er folgenden _Abbildung 14_ strukturiert sein:
 
-![Name](files/Spaltendarstellung.png)   
+![Name](files/Spaltendarstellung.PNG)   
 Abbildung 14: Beispiel Spaltendarstellung für Anwendungsfall "Zeitschriften Abo"  </br>
 
 Hier gibt es fünf Spalten in der fünf verschiedene Informationen gespeichert sind. Der Index stellt die kundenId dar, für unser Beispiel ist also jeweils die 2. Zeile relevant. Die benötigten Werte zur Berechnung des Enddatums können mit einem Zugriff auf nur zwei Spalten ausgelsen werden, die Spalte _"AboStartdatum"_ und die Spalte _"Laufzeit"_. Die Datensätze zu Name, Vorname und Adresse werden nicht benötigt und daher muss auf die entsprechenden Dateien nicht zu gegriffen werden, es werden nur relevante Spalten abgefragt.
