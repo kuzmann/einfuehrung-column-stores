@@ -22,7 +22,7 @@ Auch die andere große Unternehmen, wie Amazon und Facebook, wussten einen für 
 
 In dem Paper “Dynamo: Amazon´s Highly Available Key-value Store”, welches 2007 veröffentlicht worden ist, präsentiert G.DeCandia et al. den Aufbau und Umsetzung von Dynamo. Dynamo ist ein Key-Value-Datenbanksystem speziell für die Bedürfnisse von Amazon entwickelt. Bei Online-Shopping kann schon ein kleiner Ausfall der Datenbank sehr schnell hohe finanzielle Konsequenzen bedeuten. Deshalb war es für Amazon sehr wichtig ein Datenbanksystem zu entwickeln, der die größtmögliche Verlässlichkeit vor Ausfällen bietet. Auch bei Dynamo wird mit einem verteilten Dateisystem gearbeitet. [DHJ07]
 
-Facebook entwickelte im Jahr 2008 das recht bekannte Open Source Datenbanksystem Cassandra, **welches wir im Kapitel X näher eingehen werden.** Es stellt ein verteiltes System für große strukturierte Datenmengen, welches besonders die Wichtigkeit auf hohe Skalierbarkeit und Ausfallsicherheit legt. [WAC18]
+Facebook entwickelte im Jahr 2008 das recht bekannte Open Source Datenbanksystem Cassandra, welches im Kapitel 6.1 näher eingegangen wird. Es stellt ein verteiltes System für große strukturierte Datenmengen, welches besonders die Wichtigkeit auf hohe Skalierbarkeit und Ausfallsicherheit legt. [WAC18]
 
 ***
 

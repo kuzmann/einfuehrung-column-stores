@@ -13,10 +13,10 @@ Data Warehouses bieten den Vorteil, dass es möglich ist eine Aggregation aus de
 Die hier vorliegenden heterogenen Daten werden von nachgelagerten Analysesystemen genutzt, die dann wiederum spezifische erstellte Auszüge aus den Daten (Data Marts) bieten, um beispielsweise betriebliche Kennzahlen zu ermitteln. Das Data Warehousing bezeichnet alle Prozesse zur Datenbeschaffung, Verwaltung, Sicherung und Bereitstellung von Daten.[BDI 18] 
  
 Ein Data Warehouse basiert zwar in der Regel auf relationalen Datenbanken. Bei großen Datenmengen nutzt man zur hierarchischen Strukturierung der Daten eine OLAP-Datenbank (Online Analytical Processing).  
-Heutzutage spielt in vielen Unternehmen Online Analytical Processing (OLAP) eine wachsende Rolle und durch die Art der Datenspeicherung als Tupel einer Tabelle der traditionellen zeilenorientierten Datenbanken werden komplexe analytische Anfragen immer schwerer bewältigt. In (FEHLR HIER TEXT?)
+Heutzutage spielt in vielen Unternehmen Online Analytical Processing (OLAP) eine wachsende Rolle und durch die Art der Datenspeicherung als Tupel einer Tabelle der traditionellen zeilenorientierten Datenbanken werden komplexe analytische Anfragen immer schwerer bewältigt.
 
 Durch die spaltenweise Speicherung kann schneller lesend gezielt auf große, bestimmte Datenmengen zugegriffen werden, ohne irrelevante Informationen mit abrufen zu müssen. In OLAP Query Performance in Column-Orieted Databases wird erwähnt:
-“ In contrast to row oriented databases, which use “once-a-tuple” pipeline processing, column-oriented databases use “once-a-column” style processing, which is aimed at better I/O and cache efficiency” (ZITAT-REFRERENZ GFEHLT)
+“ In contrast to row oriented databases, which use “once-a-tuple” pipeline processing, column-oriented databases use “once-a-column” style processing, which is aimed at better I/O and cache efficiency”
 
 Es gibt vier Arten von OLAP Servern, die hier nur genannt werden sollen: 
 - Relational OLAP (RPLAP)
