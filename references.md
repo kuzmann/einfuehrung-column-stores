@@ -64,6 +64,7 @@ D. Abadi, P. Boncz, S. Harizopoulos, S. Idreos und S. Madden, The Design and Imp
 
 [BDI-HD] N. Litzel, https://www.bigdata-insider.de/was-ist-hadoop-a-587448/, 01.09.2016, letzter Aufruf 10.01.2019
  
+[RSRG16] R. Gobla, https://dzone.com/articles/row-store-and-column-store-databases, aufgerufen 22.12.18 
 
 [CVHB-19] - Cassandra vs. HBase: Zwillinge oder nur Fremde, die ähnlich aussehen?, https://www.scnsoft.de/blog/cassandra-vs-hbase, abgerufen 13.01.2019
 
