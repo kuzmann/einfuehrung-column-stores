@@ -63,6 +63,8 @@ D. Abadi, P. Boncz, S. Harizopoulos, S. Idreos und S. Madden, The Design and Imp
 [KOS-15] F. Eitel, J. Neef, M. Seibold, M. Weber, KOS.content, Ergebnisse der Untersuchungen des bKompetenzzentrum Open Source der DHBW-Stuttgart, Testszenarien für NoSQL-Datenbanksysteme/-dienste aus der Cloud, Paper: https://www.dhbw-stuttgart.de/fileadmin/dateien/KOS/pub_kos.content_1.2015.band2.pdf, Band 2, 2015, S.61
 
 [BDI-HD] N. Litzel, https://www.bigdata-insider.de/was-ist-hadoop-a-587448/, 01.09.2016, letzter Aufruf 10.01.2019
+ 
 
+[CVHB-19] - Cassandra vs. HBase: Zwillinge oder nur Fremde, die ähnlich aussehen?, https://www.scnsoft.de/blog/cassandra-vs-hbase, abgerufen 13.01.2019
 
 ***
