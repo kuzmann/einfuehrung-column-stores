@@ -6,11 +6,12 @@
 
 # 7. Nutzen im Data Warehousing
 Ein zentrales Datenbanksystem in dem themenorientierte Daten aus verschiedenen Datenquellen gesammelt und langfristig gesichert werden nennt man Datawarehouse oder auch Datenlager. Die Daten werden mit neuen Daten in Zeitintervallen periodisch ergänzt. Jedoch werden bestehenden Daten nicht verändert.  
-Die Datenquellen bilden meiste operative Systeme, deren Daten für die spätere Entscheidungsfindung in Unternehmen gespeichert werden. [ADW-BI 05 , S.3 ff]
+Die Datenquellen bilden meiste operative Systeme, deren Daten für die spätere Entscheidungsfindung in Unternehmen gespeichert werden.[ADW-BI 05]
 
 Data Warehouses bieten den Vorteil, dass es möglich ist eine Aggregation aus den Daten verschiedener Datenquellen zu bilden und so einen Gesamtblick zu erhalten. Dabei können die Daten auch aus einem operativen zeilenorientierten DBMS eines Unternehmens kommen, welche in die Kategorie Online Transaction Processing (OLTP) fallen. In den zeilenorientierten DBMS werden die Tupel einer Tabelle nacheinander gespeichert und nicht denormalisiert und komprimiert wie in Abschnitt 4.1 Datenmodell beschrieben.
 
-Die hier vorliegenden heterogenen Daten werden von nachgelagerten Analysesystemen genutzt, die dann wiederum spezifische erstellte Auszüge aus den Daten (Data Marts) bieten, um beispielsweise betriebliche Kennzahlen zu ermitteln. Das Data Warehousing bezeichnet alle Prozesse zur Datenbeschaffung, Verwaltung, Sicherung und Bereitstellung von Daten.[BDI 18]  
+Die hier vorliegenden heterogenen Daten werden von nachgelagerten Analysesystemen genutzt, die dann wiederum spezifische erstellte Auszüge aus den Daten (Data Marts) bieten, um beispielsweise betriebliche Kennzahlen zu ermitteln. Das Data Warehousing bezeichnet alle Prozesse zur Datenbeschaffung, Verwaltung, Sicherung und Bereitstellung von Daten.[BDI 18] 
+ 
 Ein Data Warehouse basiert zwar in der Regel auf relationalen Datenbanken. Bei großen Datenmengen nutzt man zur hierarchischen Strukturierung der Daten eine OLAP-Datenbank (Online Analytical Processing).  
 Heutzutage spielt in vielen Unternehmen Online Analytical Processing (OLAP) eine wachsende Rolle und durch die Art der Datenspeicherung als Tupel einer Tabelle der traditionellen zeilenorientierten Datenbanken werden komplexe analytische Anfragen immer schwerer bewältigt. In (FEHLR HIER TEXT?)
 
@@ -44,8 +45,9 @@ In [BDI-BI 18] wird eine weitere Definition aus IT-basierten und unternehmensspe
 ```
 Quellenangabe:
 
-- [ADW-BI ]   ..... S.3 ff
-- [BDI 18]    .....
+- [ADW-BI 05 , S.3 ff]
+- [BDI 18] - https://www.bigdata-insider.de/was-ist-ein-data-warehouse-a-606701/, Stand 03.01.19
+- [BDI-BI 18] - https://www.bigdata-insider.de/was-ist-business-intelligence-bi-a-563185/, Stand 10.01.19
 
 ```
 ***

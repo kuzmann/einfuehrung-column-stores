@@ -48,10 +48,21 @@ D. Abadi, P. Boncz, S. Harizopoulos, S. Idreos und S. Madden, The Design and Imp
 
 [He12]        Olaf Herden. Spaltenbasierte Datenbanken - Ein Konzept zur Handhabung großer Datenmenge, Paper:https://pdfs.semanticscholar.org/be20/ffdb2889b608d4c086b087bf989709adea03.pdf, 2012   
 
-[TE18]        ]https://www.tecchannel.de/a/bi-methoden-teil-1-ad-hoc-analysen-mit-olap,1751285,2 , abgerufen 30.12.2018   
+[TE18]        https://www.tecchannel.de/a/bi-methoden-teil-1-ad-hoc-analysen-mit-olap,1751285,2 , abgerufen 30.12.2018   
 
 [DSN08]     Daniel J. Abadi, Samuel R. Madden, and Nabil Hachem. Columnstores vs. rowstores: How different are they really?, 2008.   
 
 [MG15]    Marcel Gladbach, Spaltenorientierte Datenbanken, Hochschule für Technik, Wirtschaft und Kultur Leipzig, Paper, 2015   
+
+[BDI 18]  https://www.bigdata-insider.de/was-ist-ein-data-warehouse-a-606701/, abgerufen 03.01.19
+
+[BDI-BI 18]  https://www.bigdata-insider.de/was-ist-business-intelligence-bi-a-563185/, abgerufen 10.01.19
+
+[ADW-BI 05]	Bernhard Humm. Architektur von Data Warehouses und Business Intelligence Systemen, Informatik Spektrum, Springer Verlag, Paper:https://pdfs.semanticscholar.org/be20/ffdb2889b608d4c086b087bf989709adea03.pdf, 2005
+
+[KOS-15] F. Eitel, J. Neef, M. Seibold, M. Weber, KOS.content, Ergebnisse der Untersuchungen des bKompetenzzentrum Open Source der DHBW-Stuttgart, Testszenarien für NoSQL-Datenbanksysteme/-dienste aus der Cloud, Paper: https://www.dhbw-stuttgart.de/fileadmin/dateien/KOS/pub_kos.content_1.2015.band2.pdf, Band 2, 2015, S.61
+
+[BDI-HD] N. Litzel, https://www.bigdata-insider.de/was-ist-hadoop-a-587448/, 01.09.2016, letzter Aufruf 10.01.2019
+
 
 ***
