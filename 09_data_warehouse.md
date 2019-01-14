@@ -41,7 +41,7 @@ Durch die sinkenden Kosten für Computerhardware, wie RAM, wird es für Unterneh
 
 ***
 
-[<< Anwendungsbeispiele >>](08_use_cases.md) | [Fazit >>](10_fazit.md)
+[<< Anwendungsbeispiele](08_use_cases.md) | [Fazit >>](10_fazit.md)
 
 ***
 

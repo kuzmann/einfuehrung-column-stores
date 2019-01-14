@@ -19,7 +19,7 @@ Im Folgenden werden die typischen Arten von Datenbankzugriffen betrachten.
 
 ***
 
-[<< Performance >>](06-5_performance.md) | [Datenbankzugriffe >>](07-2_db-access.md)
+[<< Performance](06-5_performance.md) | [Datenbankzugriffe >>](07-2_db-access.md)
 
 ***
 

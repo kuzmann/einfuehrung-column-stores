@@ -59,7 +59,7 @@ Es gibt eine vorgelagerte schreiboptimierte Datenbank, in der Änderungen gespei
 
 ***
 
-[<< Datenstruktur >>](07-3_normalized_data_structure.md) | [Datawarehouse und Business Intelligence >>](09_data_warehouse.md)
+[<< Datenstruktur ](07-3_normalized_data_structure.md) | [Datawarehouse und Business Intelligence >>](09_data_warehouse.md)
 
 ***
 

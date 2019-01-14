@@ -4,6 +4,8 @@
 
 ***
 
+# Datenbankzugriffe
+
 ## 5.1 Schreibende Datenbankzugriffe
 
 Es gibt verschiedene Arten von Intentionen schreibend auf eine Datenbank zu zugreifen. Neben dem Einfügen komplett neuer Daten, kann es auch nötig sein einzelne Werte zu aktualisieren oder gar die Tabellenstruktur zu verändern.
@@ -31,7 +33,7 @@ Beim Auslesen vieler Datensätze (Aggregation), wobei nur wenig Spalten relevant
 
 ***
 
-[<< Row Store vs Column Store >>](07-1_row-colum-store.md) | [Datenstruktur >>](07-3_normalized_data_structure.md)
+[<< Row Store vs Column Store](07-1_row-colum-store.md) | [Datenstruktur >>](07-3_normalized_data_structure.md)
 
 ***
 
