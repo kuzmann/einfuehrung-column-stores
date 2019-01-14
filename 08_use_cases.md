@@ -53,10 +53,8 @@ den Namenode und den Datanode. HBase speichert Metadaten auf dem NameNode und Da
 
 #### C-Store / Vertica
 
-C-Store und dessen Erweiterung Vertica ist eine der wenigen echten physischen Column Stores, da die meisten Implementierungen dies (WAS IST DIES?) nur im Arbeitsspeicher realisieren.
+C-Store und dessen Erweiterung Vertica ist eine der wenigen echten physischen Column Stores, da die meisten Implementierungen die Daten nur im Arbeitsspeicher spaltenorientiert realisieren.
 Es gibt eine vorgelagerte schreiboptimierte Datenbank, in der Änderungen gespeichert werden und dann in regelmäßigen Abständen in den komprimierten Datenbestand synchronisieren.
-
-(VIELLEICHT HIER NOCH EIN BILD ZU DER DATENSTRUKTUR?)
 
 
 ***
