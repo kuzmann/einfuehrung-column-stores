@@ -5,47 +5,40 @@
 ***
 
 # 5.3. Normalisierte Datenstruktur
-Spaltenorientierte Datenbanken bevorzugen eine denormalisierte Datenstruktur.  Wenn wir zum Beispiel in einer zeilenorientierten Datenbank ein Kundensystem für ein Zeitungsabonement abbilden wollen, haben wir eine Tabelle für alle Kunden die eine bestimmte Form von Abonnement haben. Es gibt in diesem Beipsuel die Abonnements “Premium, Student, Test”. Des Weiteren gibt es eine Tabelle mit den registrierten Kundendatensätzen, eine Tabelle mit der Auflistung welcher Kunder welches Abo seit wann hat und wie lang es läuft und dann vielleicht noch eine Tabelle, welche Einkäufe zusätzlich zum Abonnement gemacht wurden. Die Tabellen 2-4 in diesem Abschnitt zeigen die zum Beispielfall gehörigen Datenbanktabellen. Die Tabellen sind vereinfaacht dargestellt und würden in der Praxis eher noch Referenzen zu Geodatenbanken haben, für unser Beispiel reichen aber jeweils eine Tabelle mit Kundendaten, den angebotenen Aboformen und der Zuordnung welcher Kunde welches Abo hat über die jeweiligen IDs.
+Spaltenorientierte Datenbanken bevorzugen eine denormalisierte Datenstruktur. Wenn wir zum Beispiel in einer zeilenorientierten Datenbank ein Kundensystem für ein Zeitungsabonnement abbilden wollen, haben wir eine Tabelle für alle Kunden die eine bestimmte Form von Abonnement haben. Es gibt in diesem Beispiel die Abonnements “Premium, Student, Test”. Des Weiteren gibt es eine Tabelle mit den registrierten Kundendatensätzen, eine Tabelle mit der Auflistung welcher Kunde welches Abo seit wann hat und wie lang es läuft. Es könnte auch noch eine Tabelle geben, welche die zusätzlichen Einkäufe zum Abonnement erfasst, diese lassen wir aber für unser Beispiel ausser Betracht. Die Tabellen 2-4 in diesem Abschnitt zeigen die zum Beispielfall gehörigen Datenbanktabellen. Die Tabellen sind vereinfacht dargestellt und würden in der Praxis eher noch Referenzen zu Geodatenbanken etc. haben, für unser Beispiel reicht jeweils eine Tabelle mit Kundendaten, den angebotenen Abonnementformen und der Zuordnung welcher Kunde welches Abonnement hat. Dies erfolgt über eine Aggregationstabelle von kundenId und aboId.
 
 
  _Skizzenhafter Aufbau für das Beispiel eines Zeitungsabos in einem zeilenorientierten Datenbanksystem:_
 
 
-|_kundenId | Name    | Vorname |   Adresse             | Abostart     |
-|----|---------|---------|-----------------------|--------------|
-| 1  | Müller  | Karl    | Schubertstr. 12       |  12.01.2018  |
-| 2  | Schmidt | Otto    | Südring 23	         |  05.11.2018  |
-| 3  | Krenz   | Melanie | Am Ring 34	         |  01.05.2018  |
-| 4  | Pax     | Anna    | Stadelhofferstr. 13   |  08.05.2018  |
 
-Tabelle 2: Beispiel Kundentabelle für Anwendungsfall "Zeitschriften Abo"
+![Kundendaten](files/KundendatenRow.png)   
+Abbildung 11: Beispiel Kundentabelle für Anwendungsfall "Zeitschriften Abo"  </br>
 
 
-
-|_aboId |Beschreibung	|Laufzeit in Monaten|   
-|----|--------------|-------------------|
-| 1 |	Test		| 3 |
-| 2 |	Student		| 6 |
-| 3 |	Premium		| 12|
-
-Tabelle 3: Beispiel Abonementtabelle für Anwendungsfall "Zeitschriften Abo"
+![Abonnementarten](files/AbonnementArten-Row.png)   
+Abbildung 12: Beispiel Abonementtabelle für Anwendungsfall "Zeitschriften Abo"  </br>
 
 
-|kundenId | aboId|
-|---|---|
-|1	|2|
-|2	|1|
-|3	|3|
-|4	|2|
-|5	|2|
+![Aggregation](files/AggregationRow.png)   
+Abbildung 13: Beispiel Aggregationstabelle Kunde zu Abonnement  </br>
 
-Tabelle 4: Beispiel Zuordnungstabelle von Kunden zu Abonement
+
+Wird die Information benötigt, wann das Abonnement des Kunden mit der kundenId = 2 ausläuft benötigt man zwei Werte zur Berechnung des Enddatums. Aus der Kundentabelle das Startdatum des Abonnements und aus der Abonnementtabelle die Laufzeit. Hierfür muss erst die Aggregationstabelle gefragt werden welches Abonnement der Kunde mit der ID 2 hat. Mit der erhaltenen aboId = 1 kann nun die Standard Laufzeit des Abonnements (hier: 3 Monate) ausgelesen werden. Dann muss in der Tabelle Kundendaten auf das komplette Tupel zur kundenId = 2 abgefragt werden, um das Startdatum auszulesen. Nun kann aus _Startdatum + Laufzeit_ berechnet werden, dass der Vertrag zum 01.02.2019 ausläuft.
+Für diesen Anwendungsfall ist ein zeilenorietniertes Datenbanksystem gut geeignet.
+
+In einer spaltenorientierten Datenbank könnten die Daten wie ind er folgenden _Abbildung 14_ strukturiert sein:
+
+![Name](files/Spaltendarstellung.png)   
+Abbildung 14: Beispiel Spaltendarstellung für Anwendungsfall "Zeitschriften Abo"  </br>
+
+Hier gibt es fünf Spalten in der fünf verschiedene Informationen gespeichert sind. Der Index stellt die kundenId dar, für unser Beispiel ist also jeweils die 2. Zeile relevant. Die benötigten Werte zur Berechnung des Enddatums können mit einem Zugriff auf nur zwei Spalten ausgelsen werden, die Spalte _"AboStartdatum"_ und die Spalte _"Laufzeit"_. Die Datensätze zu Name, Vorname und Adresse werden nicht benötigt und daher muss auf die entsprechenden Dateien nicht zu gegriffen werden, es werden nur relevante Spalten abgefragt.
+Einen wirklichen Vorteil bietet dies, wenn das Unternehmen beispielsweise herausfinden möchte, wann die meisten Verträge geschlossen werden und von welcher Abonnementart diese sind.
 
 
 
 
-
-In einer spaltenorientierten Datenbank könnte eine einzige Tabelle die Informationen mit den Kundendaten und den Einkäufen abbilden.
+Es könt auch in einer spaltenorientierten Datenbank eine einzige Tabelle die Informationen mit den Kundendaten und den Einkäufen abbilden.
 Die Normalisierung der Daten macht es in zeilenorientierten Datenbanken schneller Daten zu aktualisieren, da man dann beim Aktualisieren von Kundendaten nur an einer Stelle ändern muss und alle anderen Transaktionen beziehen sich die Aktualisierung aus der einen Zelle. In der spaltenorientierten Datenbank würde man die Kundendaten zusammen mit den zusätzlichen Einkäufen speichern und müsste dann um beispielsweise die Adresse zu aktualisieren, an mehreren Stellen die Aktualisierung vornehmen.
 
 
