@@ -54,12 +54,12 @@ den Namenode und den Datanode. HBase speichert Metadaten auf dem NameNode und Da
 #### C-Store / Vertica
 
 C-Store und dessen Erweiterung Vertica ist eine der wenigen echten physischen Column Stores, da die meisten Implementierungen die Daten nur im Arbeitsspeicher spaltenorientiert realisieren.
-Es gibt eine vorgelagerte schreiboptimierte Datenbank, in der Änderungen gespeichert werden und dann in regelmäßigen Abständen in den komprimierten Datenbestand synchronisieren.
+Es gibt eine vorgelagerte schreiboptimierte Datenbank, in der Änderungen gespeichert werden und dann in regelmäßigen Abständen in den komprimierten Datenbestand synchronisieren.[MG15]
 
 
 ***
 
-[<< Datenstruktur >>](07-3_normalized_data_structure.md) | [Nutzen für Datawarehouse und BI >>](09_data_warehouse.md)
+[<< Datenstruktur >>](07-3_normalized_data_structure.md) | [Datawarehouse und Business Intelligence >>](09_data_warehouse.md)
 
 ***
 
@@ -70,6 +70,7 @@ Quellenangabe:
 [KOS-15] - F. Eitel, J. Neef, M. Seibold, M. Weber, KOS.content, Ergebnisse der Untersuchungen des bKompetenzzentrum Open Source der DHBW-Stuttgart, Testszenarien für NoSQL-Datenbanksysteme/-dienste aus der Cloud, Paper: https://www.dhbw-stuttgart.de/fileadmin/dateien/KOS/pub_kos.content_1.2015.band2.pdf, Band 2, 2015, S.61
 [BDI-HD] - N. Litzel, https://www.bigdata-insider.de/was-ist-hadoop-a-587448/, 01.09.2016, letzter Aufruf 10.01.2019
 [CVHB-19] - https://www.scnsoft.de/blog/cassandra-vs-hbase, letzter Aufruf 13.01.2019
+[MG15] - Marcel Gladbach, Spaltenorientierte Datenbanken, Hochschule für Technik, Wirtschaft und Kultur Leipzig, Paper, 2015, S.3 ff
 
 ```
 

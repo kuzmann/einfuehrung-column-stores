@@ -66,6 +66,18 @@ D. Abadi, P. Boncz, S. Harizopoulos, S. Idreos und S. Madden, The Design and Imp
  
 [RSRG16] R. Gobla, https://dzone.com/articles/row-store-and-column-store-databases, aufgerufen 22.12.18 
 
-[CVHB-19] - Cassandra vs. HBase: Zwillinge oder nur Fremde, die ähnlich aussehen?, https://www.scnsoft.de/blog/cassandra-vs-hbase, abgerufen 13.01.2019
+[CVHB-19]  Cassandra vs. HBase: Zwillinge oder nur Fremde, die ähnlich aussehen?, https://www.scnsoft.de/blog/cassandra-vs-hbase, abgerufen 13.01.2019
+
+[WCSJS-18] J.Schulz, Why Column Stores?, https://blog.pythian.com/why-column-stores/, aufgerufen 15.12.18
+
+[WCF17] J.Clark, https://insidebigdata.com/2017/03/20/columnar-databases-future-business-intelligence/, abgerufen 03.01.2019
+
+[HPCD09] H. Plattner, A Common Database Approach for OLTP and OLAP Using an In-Memory Column Database, Paper:http://www.sigmod09.org/images/sigmod1ktp-plattner.pdf, 2009
+
+[SCD12] S. Sorjonen, OLAP Query Performance in Column-Orieted Databases, Paper:https://www.cs.helsinki.fi/webfm_send/1003/sami_final.pdf, 2012
+
+[TPDW] https://www.tutorialspoint.com/dwh/dwh_olap.htm, abgerufen 13.01.2019
+
+
 
 ***
