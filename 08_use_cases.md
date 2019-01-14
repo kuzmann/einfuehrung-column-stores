@@ -25,7 +25,7 @@ Um komplexere Datenstrukturen abbilden zu können, gibt es die Super Columns. Da
 Der fünfte Bestandteil in Cassandra ist die kleinste Informationseinheit, die Column. Sie besteht meistens aus dem Tupel: Name, Wert und Timestamp.
 
 
-![Cassadnra DatenModell](files/CassandraDatenModell.png)
+![Cassadnra DatenModell](files/CassandraDatenModell.PNG)
 
 Abbildung 15: Cassadnra Datenmodell aus [KOS-15] </br>
 
