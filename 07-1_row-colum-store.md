@@ -7,16 +7,14 @@
 # 5. Row Store vs Column Store
 
 In diesem Abschnitt sollen einige Unterschiede von zeilenorientierten Datenbanken und spaltenorientierten Datenbanken
-aufgezeigt werden. Dafür betrachten wir die verschiedenen Anwendungsfälle von schreibenden und lesenden Datenbankzugriffen und die Datenstrukturen von beiden Modellen.
+aufgezeigt werden. Dafür betrachten wir die verschiedenen Anwendungsfälle von schreibenden und lesenden Datenbankzugriffen und die Datenstrukturen beider Modellen.
 
-Im Allgemeinen eignen sich Row Stores,oder auch zeilenorientierte Datenbanken gut zum Speichern von Transaktionen,
-wobei spaltenorientierte Datenbanken eher geeignet sind wenn man große Datenmengen schnell lesen möchte, dies liegt daran,
-dass Festplatten die Informationen nacheinander schreiben beim Speichern. So werden beim Speichern von zeilenbasierten
-Datenbanken immer erst das gesamte Tupel geschrieben und dann die nächste Zeile.
-Beim spaltenorientierten Speichern stehend die Tupel auf der Platte beieinander, so können für Analysen zusammengehöroge Daten schneller
+Im Allgemeinen eignen sich Row Stores, oder auch zeilenorientierte Datenbanken gut zum Speichern von Transaktionen, wobei spaltenorientierte Datenbanken eher geeignet sind wenn man große Datenmengen schnell lesen möchte. Dies liegt ander Art wie Festplatten Informationen beim Speichern schreiben. So wird beim  Speichern die Information nacheinander geschrieben, dies bedeutet für zeilenorientierte Datenbanken, dass  immer erst eine komplette Zeile, ein Tupel, geschrieben wird bevor das nächste Tupel geschrieben wird.
+ 
+Beim spaltenorientierten Speichern stehend die zu einer Spalte gehörenden Daten auf der Platte beieinander, so können für Analysen zusammengehörige Daten schneller
 gelesen werden.
 
-Im Folgenden sind die typischen Arten von Datenbankzugriffen näher betrachten in Hinblick auf die Performance.
+Im Folgenden werden die typischen Arten von Datenbankzugriffen betrachten.
 
 
 ***
