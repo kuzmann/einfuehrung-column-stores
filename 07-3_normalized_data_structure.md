@@ -28,7 +28,7 @@ Abbildung 12: Beispiel Abonnementtabelle für Anwendungsfall "Zeitschriften Abo"
 Abbildung 13: Beispiel Aggregationstabelle Kunde zu Abonnement  </br>
 
 
-Wird die Information benötigt, wann das Abonnement des Kunden mit der kundenId = 2 ausläuft benötigt man zwei Werte zur Berechnung des Enddatums. Aus der Kundentabelle das Startdatum des Abonnements und aus der Abonnementtabelle die Laufzeit. Hierfür muss erst die Aggregationstabelle gefragt werden welches Abonnement der Kunde mit der ID 2 hat. Mit der erhaltenen aboId = 1 kann nun die Standard Laufzeit des Abonnements (hier: 3 Monate) ausgelesen werden. Dann muss in der Tabelle Kundendaten auf das komplette Tupel zur kundenId = 2 abgefragt werden, um das Startdatum auszulesen. Nun kann aus _Startdatum + Laufzeit_ berechnet werden, dass der Vertrag zum 01.02.2019 ausläuft.
+Wird die Information benötigt, wann das Abonnement des Kunden mit der `kundenId = 2` ausläuft benötigt man zwei Werte zur Berechnung des Enddatums. Aus der Kundentabelle das Startdatum des Abonnements und aus der Abonnementtabelle die Laufzeit. Hierfür muss erst die Aggregationstabelle gefragt werden welches Abonnement der Kunde mit der `ID 2` hat. Mit der erhaltenen `aboId = 1` kann nun die Standard Laufzeit des Abonnements (hier: 3 Monate) ausgelesen werden. Dann muss in der Tabelle Kundendaten auf das komplette Tupel zur `kundenId = 2` abgefragt werden, um das Startdatum auszulesen. Nun kann aus _Startdatum + Laufzeit_ berechnet werden, dass der Vertrag zum 01.02.2019 ausläuft.  
 Für diesen Anwendungsfall ist ein zeilenorietniertes Datenbanksystem gut geeignet.
 
 In einer spaltenorientierten Datenbank könnten die Daten wie ind er folgenden _Abbildung 14_ strukturiert sein:
@@ -36,7 +36,7 @@ In einer spaltenorientierten Datenbank könnten die Daten wie ind er folgenden _
 ![Spaltendarstellung](files/spaltendarstellung.PNG)   
 Abbildung 14: Beispiel Variante Spaltendarstellung für Anwendungsfall "Zeitschriften Abo"  </br>
 
-Hier gibt es fünf Spalten in der fünf verschiedene Informationen gespeichert sind. Der Index stellt die kundenId dar, für unser Beispiel ist also jeweils die 2. Zeile relevant. Die benötigten Werte zur Berechnung des Enddatums können mit einem Zugriff auf nur zwei Spalten ausgelsen werden, die Spalte _"AboStartdatum"_ und die Spalte _"Laufzeit"_. Die Datensätze zu Name, Vorname und Adresse werden nicht benötigt und daher muss auf die entsprechenden Dateien nicht zu gegriffen werden, es werden nur relevante Spalten abgefragt.
+Hier gibt es fünf Spalten in der fünf verschiedene Informationen gespeichert sind. Der Index stellt die kundenId dar, für unser Beispiel ist also jeweils die 2. Zeile relevant. Die benötigten Werte zur Berechnung des Enddatums können mit einem Zugriff auf nur zwei Spalten ausgelsen werden, die Spalte _"AboStartdatum"_ und die Spalte _"Laufzeit"_. Die Datensätze zu Name, Vorname und Adresse werden nicht benötigt und daher muss auf die entsprechenden Dateien nicht zu gegriffen werden, es werden nur relevante Spalten abgefragt.  
 Einen wirklichen Vorteil bietet dies, wenn das Unternehmen beispielsweise herausfinden möchte, wann die meisten Verträge geschlossen werden und von welcher Abonnementart diese sind.
 
 Es könt auch in einer spaltenorientierten Datenbank eine einzige Tabelle die Informationen mit den Kundendaten und den Einkäufen abbilden, da die Keys auch frei vergeben werden können.
