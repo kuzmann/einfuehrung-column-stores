@@ -15,7 +15,7 @@ Beim spaltenorientierten Speichern stehend die zu einer Spalte gehörenden Daten
 gelesen werden.[MG15]
 
 Im Folgenden werden die typischen Arten von Datenbankzugriffen betrachten.
-
+ 
 
 ***
 
