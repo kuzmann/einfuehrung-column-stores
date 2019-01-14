@@ -21,7 +21,7 @@ Um in einer zeilenorientierten Datenbank eine Spalte zu ändern muss man diese S
 In einer zeilenorientierten Datenbank ist eine Änderung der Tabellenstruktur nur aufwendig möglich. In der spaltenorientierten Datenbank wird einfach eine neue Datei für die hinzukommende Spalte angelegt, wobei diese auch nicht an eine feste Objektart gebunden ist.[MG15]
 
 
-## 5.2. Lesender Zugriff
+## 5.2. Lesender Datenbankzugriff
 Um transaktionale Operationen auszuführen oder einzelne komplette Datensatzes zu lesen sind spaltenorientierte Datenbanken nicht geeignet, da hier in jeder Datei gesucht werden muss. Hier bietet die zeilenorientierte Datenbank den Vorteil, dass mit einem Zugriff das gesamte Tupel ausgelesen werden kann, wenn ein Index vorhanden ist. Sollte der Index nicht vorhanden sein, muss die gesamte Tabelle durchsucht werden. 
 Die Anzahl an Raw Bytes, die in spaltenorientierten Datenbanken benötigt werden sind im Vergleich zur zeilenorientierten Datenbanken ziemlich hoch, daher liegen die Daten, wie in “Kapitel 4 Datenmodell” bereits erwähnt komprimiert auf Platte vor.
 

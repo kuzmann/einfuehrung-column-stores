@@ -53,7 +53,7 @@ Wenn nur einige wenige Felder einer Wide Table Datenstruktur gebraucht werden si
 
 ***
 
-[<< Datenstruktur](07-3_normalized_data-structure.md) | [Anwendungsbeispiele >>](08_use_cases.md)
+[<< Datenbankzugriffe](07-2_db-access.md) | [Anwendungsbeispiele >>](08_use_cases.md)
 ***
 
 ```

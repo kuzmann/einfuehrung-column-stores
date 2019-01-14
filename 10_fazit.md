@@ -17,6 +17,6 @@ Wenn wir beispielsweise nicht wissen wollen, welche Haustiere ein bestimmter Use
 
 ***
 
-[<< Nutzen im Data Warehousing](09_data_warehouse.md) | [Literaturverzeichnis >>](references.md)
+[<< Data Warehousing und Business Intelligence](09_data_warehouse.md) | [Literaturverzeichnis >>](references.md)
 
 ***

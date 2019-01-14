@@ -12,16 +12,16 @@
     - [4.4. Kompressionstechniken](06-4_compression.md)
     - [4.5. Perfomance](06-5_performance.md)
 
-
 - [5. Row Store vs Column Store](07-1_row-colum-store.md)
     - [5.1. Schreibende Datenbankzugriffe](07-2_db-access.md)
-    - [5.2. Lesender Zugriff](07-2_db-access.md)
-    - [5.3. Normalisierte Datenstruktur](07-3_normalized_data_structure.md)
+    - [5.2. Lesender Datenbankzugriff](07-2_db-access.md)
+    - [5.3. Datenstruktur](07-3_normalized_data_structure.md)
 - [6. Anwendungsbeispiele](08_use_cases.md)
     - Cassandra
     - HBase
     - Weitere Beispiele
-- [7. Date Warehouse und Business Intelligence](09_data_warehouse.md)
+- [7. Data Warehousing](09_data_warehouse.md)
+    - [7.1 Business Intelligence](09_data_warehouse.md)
 - [8. Fazit](10_fazit.md)
 
 

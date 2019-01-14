@@ -4,7 +4,7 @@
 
 ***
 
-# 7. Nutzen im Data Warehousing
+# 7. Data Warehousing
 Ein zentrales Datenbanksystem in dem themenorientierte Daten aus verschiedenen Datenquellen gesammelt und langfristig gesichert werden nennt man Datawarehouse oder auch Datenlager. Die Daten werden mit neuen Daten in Zeitintervallen periodisch ergänzt. Jedoch werden bestehenden Daten nicht verändert.  
 Die Datenquellen bilden meiste operative Systeme, deren Daten für die spätere Entscheidungsfindung in Unternehmen gespeichert werden.[ADW-BI 05]
 

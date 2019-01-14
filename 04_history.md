@@ -26,7 +26,7 @@ Facebook entwickelte im Jahr 2008 das recht bekannte Open Source Datenbanksystem
 
 ***
 
-[<< Inhaltsverzeichnis](02_toc.md) | [Hintergrund und Überblick >>](05_basics.md)
+[<< Inhaltsverzeichnis](02_toc.md) | [Grundlagen und Begriffe >>](05_basics.md)
 
 ***
 
